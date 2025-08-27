@@ -74,3 +74,11 @@ This work is licensed under a
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+## Security Best Practices
+
+- Use environment variables for all sensitive information
+- Never commit tokens or credentials to the repository
+- Enable two-factor authentication for all accounts
+- Regularly rotate access tokens and credentials
+- Follow the principle of least privilege for all permissions
