@@ -1,0 +1,8 @@
+{
+  "useEnvironmentVariables": true,
+  "secureMode": true,
+  "logging": {
+    "level": "info",
+    "securityAudit": true
+  }
+}
