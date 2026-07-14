@@ -29,7 +29,7 @@ podTemplate(yaml: '''
 ''') {
   node(POD_LABEL) {
     stage('Clone Repository') {
-      git url: 'https://github.com/MichaelCade/Jenkins-HelloWorld.git', branch: 'main'
+      git url: 'https://github.com/Armor-test/media-proxy-909.git', branch: 'main'
       container('maven') {
         stage('Build Image') {
           sh '''
