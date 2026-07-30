@@ -23,7 +23,8 @@ for ip in f0.readlines():
        ip = ip.strip()
        filename_prefix ='/Users/shambhu/Documents' + ip 
        ssh = paramiko.SSHClient()
-       ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+       ssh.load_system_host_keys()
+       ssh.set_missing_host_key_policy(paramiko.RejectPolicy())
        ssh.connect(ip,port, user, password, look_for_keys=False)
        chan = ssh.invoke_shell()
        time.sleep(2)
